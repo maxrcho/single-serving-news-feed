@@ -1,0 +1,32 @@
+<div id="header">
+	
+	<div id="box">
+		<div id="grover">
+			<img src="http://f.cl.ly/items/2Q060m091B0V0c111022/washington-2.png">
+		</div>
+		
+	
+		<div id="input">
+			<form method="post" action="/">
+				<h1>Grover Washington, Jr. says:</h1>
+			    <textarea id="inputbox" name="post[content]" placeholder="What did Grover say?"></textarea>
+				<div id="submit_border">
+			    	<button id="submit_post">Submit</button>
+				</div>
+			</form>
+		</div>
+		
+	<div id="posts">
+
+		<% for ( var i = 0; i < posts.length; i++ )  { %>
+
+	    <div class="postbox">
+	      	<p class="post_body"><%= posts[ i ].content %></p>
+	    </div>
+
+		
+	  	<% } %>
+	</div>
+	</div>
+
+</div>
