@@ -29,7 +29,7 @@ app.configure( 'development', function () {
 
 app.configure( 'production', function () {
   app.use(express.errorHandler() ); 
-	var mongoose_uri = 'mongodb://heroku_app1761858:mdgp59r5or5lo2rst093emuh7f@ds029117.mongolab.com:29117/heroku_app1761858';
+	var mongoose_uri = 'mongodb://heroku_app1971911:cffl0lm2tjog2p19n61pcijo7n@ds029217.mongolab.com:29217/heroku_app1971911';
 	mongoose.connect( mongoose_uri );
 } );
 
